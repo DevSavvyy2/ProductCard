@@ -1,0 +1,90 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+   background-color: hsl(217, 61%, 85%); 
+}
+.product-card {
+    background-color: white;
+    width: 600px;
+    border-radius: 15px;
+}
+.introduction {
+    padding: 2.5em;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+#subscription {
+    display: flex;
+    color: white;
+}
+.intro {
+    color: rgb(14, 146, 146);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+    color: hsl(71, 85%, 65%);
+    letter-spacing: 0.1em;
+}
+.info {
+    line-height: 1.5em;
+    font-size: 14px;
+    color: lightgray;
+}
+.why-us {
+    background-color: rgb(85, 153, 130);
+    padding: 2em;
+    width: 400px;
+    border-bottom-right-radius: 10px;
+}
+.subscription {
+    background-color: rgb(82, 176, 176);
+    padding: 2em;
+    width: 400px;
+    border-bottom-left-radius: 10px;
+
+}
+small {
+    font-size: 8px;
+    font-weight: lighter;
+}
+button {
+    background-color: hsl(71, 85%, 65%);
+    color: white;
+    padding: 1em;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px rgb(100, 100, 100);
+}
+.why-us ul {
+    list-style: none;
+}
+@media (max-width: 768px) {
+    #container,
+    #subscription {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .product-card {
+        width: 450px;
+        overflow: hidden;
+    }
+    .subscription {
+        border-bottom-left-radius: 0;
+    }
+    .why-us {
+        border-bottom-left-radius: 10px;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
